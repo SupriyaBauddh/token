@@ -62,16 +62,19 @@ public class myController {
 			String pos = coreLabel.getString(CoreAnnotations.PartOfSpeechAnnotation.class);
 
 			switch(pos) {
-				case "appointment":
-					task = "appointment";
-					break;
-				case "data":
-					task = "users";
+				case "show":
+					task = "return info";
 					break;
 				case "my":
-					userinfo = "abcd";
+					task = "users";
+					userinfo = "supriya";
+					break;
+				case "appoinmet":
+					task="apooinment";
+					
 					break;
 			}
+		
 		}
 		List<String> info = name(coreLabels, type);
 		userinfo = info.get(0);
